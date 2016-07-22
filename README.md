@@ -1,0 +1,2 @@
+# Online-Survey-for-Experience-Sampling-Study
+This web survey is used to collect users' response to medical alert services under different scenarios. survey pages contains multi-level choices of different styles, reliable form validation. Visualized scenarios and completeness progress bar with dynamic content display to deliver reactive and friendly user experience. Sample files are uploaded here for reference.
