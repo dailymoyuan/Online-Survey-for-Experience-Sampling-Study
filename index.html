@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" xmlns="https://www.w3.org/">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Sampling Survey</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/gsdk-base.css" rel="stylesheet" />
+	<link href="assets/likert/gf_likert.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    </head>
+
+    <body>
+    <div class="image-container set-full-height">
+    
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-20 col-sm-offset-1">
+           
+            <!--      Wizard container        -->   
+            <div class="wizard-container">
+                <div class="card wizard-card ct-wizard-blue" id="wizardProfile">
+                    <div class="progress" style="height: 18px;margin-bottom: 0px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                            70%
+                        </div>
+                    </div>
+
+                    <form action="submitDemographics.php" method="post" id="surveyForm">
+                    	<ul class="hidden">                           
+                            <li phase1="0"><a href="#phase1_1" data-toggle="tab">Phase 1</a></li>
+                            <li phase1="1"><a href="#phase1_2" data-toggle="tab">P</a></li>
+                            <li phase1="2"><a href="#phase1_3" data-toggle="tab">P</a></li>
+                            <li phase1="3"><a href="#phase1_4" data-toggle="tab">P</a></li>
+                            <li phase1="4"><a href="#phase1_5" data-toggle="tab">P</a></li>
+                            <li phase1="5"><a href="#phase1_6" data-toggle="tab">P</a></li>
+                            <li><a href="#phase1Scenario2" data-toggle="tab">Introduction</a></li>
+                            <li phase2="0"><a href="#phase1_7" data-toggle="tab">P</a></li>
+                            <li phase2="1"><a href="#phase1_8" data-toggle="tab">P</a></li>
+                            <li  phase2="2"><a href="#phase1_9" data-toggle="tab">P</a></li>
+                            <li  phase2="3"><a href="#phase1_10" data-toggle="tab">P</a></li>
+                            <li  phase2="4"><a href="#phase1_11" data-toggle="tab">P</a></li>
+                            <li  phase2="5"><a href="#phase1_12" data-toggle="tab">P</a></li>
+                            <li><a href="#part2introd" data-toggle="tab">Introduction</a></li>
+                            <li phase3="1"><a href="#phase2_1" data-toggle="tab">Phase 2_1</a></li>
+                            <li phase3="2"><a href="#phase2_2" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="3"><a href="#phase2_3" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="4"><a href="#phase2_4" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="5"><a href="#phase2_5" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="6"><a href="#phase2_6" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="7"><a href="#phase2_7" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="8"><a href="#phase2_8" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="9"><a href="#phase2_9" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="10"><a href="#phase2_10" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="11"><a href="#phase2_11" data-toggle="tab">Phase 2_2</a></li>
+                            <li phase3="12"><a href="#phase2_12" data-toggle="tab">Phase 2_2</a></li>
+                            <li><a href="#address" data-toggle="tab">Demographics</a></li>
+                            <li><a href="#thankYou" data-toggle="tab">Thank You</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                                                   
+                            <div class="tab-pane" id="phase1_1"></div>
+                            <div class="tab-pane" id="phase1_2"></div>
+                            <div class="tab-pane" id="phase1_3"></div>
+                            <div class="tab-pane" id="phase1_4"></div>
+                            <div class="tab-pane" id="phase1_5"></div>
+                            <div class="tab-pane" id="phase1_6"></div>
+
+                            <div class="tab-pane" id="phase1Scenario2"></div>
+                            <div class="tab-pane" id="phase1_7"></div>
+                            <div class="tab-pane" id="phase1_8"></div>
+                            <div class="tab-pane" id="phase1_9"></div>
+                            <div class="tab-pane" id="phase1_10"></div>
+                            <div class="tab-pane" id="phase1_11"></div>
+                            <div class="tab-pane" id="phase1_12"></div>
+
+                            <div class="tab-pane" id="part2introd">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 ">
+                                        <div class="picture-container">
+                                            <h4>Part 1 - Ends</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-sm-offset-1">
+                                            <p>
+                                            You have finished part 1 of the survey.
+                                            <br/>
+                                            When you are ready to begin part 2, please press "Next" button to continue.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="phase2_1"></div>
+                            <div class="tab-pane" id="phase2_2"></div>
+                            <div class="tab-pane" id="phase2_3"></div>
+                            <div class="tab-pane" id="phase2_4"></div>
+                            <div class="tab-pane" id="phase2_5"></div>
+                            <div class="tab-pane" id="phase2_6"></div>
+                            <div class="tab-pane" id="phase2_7"></div>
+                            <div class="tab-pane" id="phase2_8"></div>
+                            <div class="tab-pane" id="phase2_9"></div>
+                            <div class="tab-pane" id="phase2_10"></div>
+                            <div class="tab-pane" id="phase2_11"></div>
+                            <div class="tab-pane" id="phase2_12"></div>
+
+
+                            <div class="tab-pane" id="address">
+                                <div class="row demographQuestionsMaster">
+                                    <h4 class="picture-container"> Demographics Information</h4>
+                                    <div class="col-sm-6 col-sm-offset-1 demographQuestions">
+                                        <div>
+                                            <label>
+                                                <h5>Age</h5>
+                                                <input type="number" min="1" step="1" name="age" id="ageDemographics">
+                                            </label>
+                                        </div>
+                                        <br/>
+                                    </div>
+
+                                    <div class="col-sm-6 col-sm-offset-1 demographQuestions">
+
+                                        <h5>Gender</h5>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="gender" id="optionsRadios1" value="male">
+                                                Male
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="gender" id="optionsRadios2" value="female">
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-sm-offset-1 demographQuestions">
+                                        <h5>Current Position</h5>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="position" id="optionsRadios4" value="Intern">
+                                                Intern
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="position" id="optionsRadios5" value="Resident">
+                                                Resident
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="position" id="optionsRadios6" value="Fellow">
+                                                Fellow
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="position" id="optionsRadios7" value="Staff">
+                                                Staff
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="position" id="optionsRadios8" value="Other">
+                                                Other
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                
+                                    <div class="col-sm-6 col-sm-offset-1 demographQuestions">
+                                        <h5>Years working with CPOE systems</h5>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="yearsOfWorking" id="optionsRadios11" value="Less than 1 year">
+                                                Less than 1 year
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="yearsOfWorking" id="optionsRadios12" value="1 - 3 years">
+                                                1 - 3 years
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="yearsOfWorking" id="optionsRadios13" value="4 - 6 years">
+                                                4 - 6 years
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="yearsOfWorking" id="optionsRadios15" value="6 -  10 years">
+                                                6 -  10 years
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="yearsOfWorking" id="optionsRadios14" value="More than 10 years">
+                                                More than 10 years
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-sm-offset-1 demographQuestions">
+                                        <h5>About what % of time do you spend in the INPATIENT environment?</h5>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="inpatientEnv" id="optionsRadios17" value="None">
+                                                None
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="inpatientEnv" id="optionsRadios18" value="1% to 25%">
+                                                1% to 25%
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="inpatientEnv" id="optionsRadios19" value="26% to 50%">
+                                                26% to 50%
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="inpatientEnv" id="optionsRadios20" value="51% to 75%">
+                                                51% to 75%
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="inpatientEnv" id="optionsRadios21" value="76% to 100%">
+                                                76% to 100%
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="thankYou">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 ">
+                                        <div class="picture-container">
+                                            <h2>Thank You!</h2>
+                                        </div>
+                                        <div class="col-sm-12 col-sm-offset-1">
+                                            <p>If you would like to receive a $30 Amazon gift card, please enter your email address.</p>
+                                        </div>
+                                        <div class="col-sm-12 col-sm-offset-1">
+                                            <div>
+                                                <label>
+                                                    <p>Email - <input type="email" min="1" step="1" name="email" id="emailId"></p>
+
+                                                </label>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <label>
+                                                    <p>Additional comments</p>
+                                                    <textarea cols="90" rows="10" name="additionalComments" placeholder="Please enter additional comments if any"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-sm-offset-1">
+                                            <p>Thank you for your participation in this research study.
+                                                You can find out more about the project <a href="http://mypage.iu.edu/~dbolchin/trusted-advice.html" target="_blank">here.</a></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--Tab Content Div Ends-->
+
+                        <div class="wizard-footer">
+                            <br/><br/>
+                            <div class="pull-right">
+                                <input type='button' class='btn btn-next btn-fill btn-info btn-wd btn-sm' name='next' value='Next' />
+                                <input type='button' class='btn btn-finish btn-fill btn-info btn-wd btn-sm' name='finish' value='Finish' />
+        
+                            </div>
+                            
+                            <div class="pull-left">
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div> <!-- wizard container -->
+        </div>
+        </div><!-- end row -->
+    </div> <!--  big container -->
+    
+    
+    <div class="footer">
+        <div class="container">
+        </div>
+    </div>
+
+</div>
+<div id="dialog" title="Warning!!!" style="display: none">
+    <p>Please check internet connection and then click on next button. <br/><strong>Please do not press back or refresh button!!!</strong></p>
+</div>
+</body>
+
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--   plugins 	 -->
+	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+
+    <!--  methods for manipulating the wizard and the validation -->
+	<script src="assets/js/wizard.js"></script>
+	<script src="assets/likert/gf_likert.js"></script>
+
+
+</html>
